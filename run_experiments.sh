@@ -18,12 +18,6 @@ $MY_PYTHON cifar100.py \
 
 cd ..
 
-# model "single"
-$MY_PYTHON main.py $CIFAR_100i --model single --lr 1.0
- 
-# model "independent" 
-$MY_PYTHON main.py $CIFAR_100i --model independent --lr 0.3  --finetune yes 
-
 # model "EWC"
 $MY_PYTHON main.py $CIFAR_100i --model ewc --lr 1.0  --n_memories 10   --memory_strength 1
 
